@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GunSingle : MonoBehaviour
 {
@@ -8,10 +9,11 @@ public class GunSingle : MonoBehaviour
     public Light gunLight;
 
     [Header("Gun Settings")]
-    public float range = 100f;
-    public int damage = 1;
-    public int ammoCapacity = 20;
-    public int batteries = 1;
+    public float range = 100f; // Alcance del disparo
+    public int damage = 1; // Daño que inflige el disparo
+    public int ammoCapacity = 20; // Capacidad de munición
+    public int batteries = 1; // Cantidad de baterías para recargar
+    public AudioSource gunSound; // Sonido del disparo
 
     [Header("References")]
     public Transform firePoint;
@@ -19,6 +21,7 @@ public class GunSingle : MonoBehaviour
 
     [Header("Visuals")]
     public float lineDuration = 0.05f;
+    public Text ammoText; // Texto para mostrar la munición restante
 
     private void Start()
     {
@@ -46,7 +49,8 @@ public class GunSingle : MonoBehaviour
 
     void Shoot()
     {
-
+        gunSound.pitch = Random.Range(0.7f, 1.5f);
+        gunSound.PlayOneShot(gunSound.clip, 0.7f);
         Ray ray = new Ray(firePoint.position, firePoint.forward);
         RaycastHit hit;
 
@@ -73,6 +77,7 @@ public class GunSingle : MonoBehaviour
         ammoCapacity--;
         gunLight.intensity-=1.9f;
         gunLight.range-=0.5f;
+        ammoText.text = "Ammo: " + ammoCapacity + "/" + batteries;
 
     }
     void reloadGun()
@@ -81,5 +86,6 @@ public class GunSingle : MonoBehaviour
         batteries --;
         gunLight.intensity = 40;
         gunLight.range = 15;
+        ammoText.text = "Ammo: " + ammoCapacity + "/" + batteries;
     }
 }

@@ -1,59 +1,55 @@
-using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnEnemy : MonoBehaviour
 {
-    [SerializeField]
     public GameObject enemyPrefab;
-    public GameObject spawner1;
-    public GameObject spawner2;
-    public GameObject spawner3;
-    public GameObject spawner4;
-    [SerializeField]
-    private float spawnInterval = 5f;
-    private float timer = 0f;
-    private int selectSpawn = 0;
-
+    public Transform[] puntosDeSpawn;
+    public int cantidadTotalEnemigos = 30;
+    private List<GameObject> poolDeEnemigos = new List<GameObject>();
+    private float timer = 0f, temporizadorSpawn = 0f;
 
     void Start()
     {
-        StartCoroutine(SpawnEnemies());
+        // Llenamos el pool de una manera rápida
+        for (int i = 0; i < cantidadTotalEnemigos; i++)
+        {
+            GameObject obj = Instantiate(enemyPrefab);
+            obj.SetActive(false);
+            poolDeEnemigos.Add(obj);
+        }
     }
+
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= 60)
+        temporizadorSpawn += Time.deltaTime;
+        // 1. TERNARIO para el intervalo (Se calcula al vuelo, eliminando la variable global)
+        float spawnInterval = timer >= 120f ? 2f : (timer >= 60f ? 3f : 4f);
+        if (temporizadorSpawn >= spawnInterval)
         {
-            spawnInterval = 4f;
-        }
-        if (timer >= 120)
-        {
-            spawnInterval = 3f;
+            int enemigosSpawn = timer >= 120f ? 3 : (timer >= 60f ? 2 : 1);
+            for (int i = 0; i < enemigosSpawn; i++)
+            {
+                AparecerEnemigoSegunTiempo(timer);
+            }
+            temporizadorSpawn = 0f;
         }
     }
-    private IEnumerator SpawnEnemies()
+
+    public void AparecerEnemigoSegunTiempo(float tiempoActual)
     {
-        while (true)
+        // 2. TERNARIO para el límite de puntos de aparicion 
+        int limiteSpawners = tiempoActual >= 120f ? 4 : (tiempoActual >= 60f ? 3 : 2);
+        Vector3 posicionAparicion = puntosDeSpawn[Random.Range(0, limiteSpawners)].position;
+
+        // 3. MINIMA EXPRESION: Usamos .Find() en lugar del foreach gigante
+        GameObject enemigoLibre = poolDeEnemigos.Find(e => !e.activeInHierarchy);
+
+        if (enemigoLibre) // Si encontró uno libre (no es nulo)
         {
-            selectSpawn = Random.Range(1, 5);
-            if (selectSpawn == 1)
-            {
-                transform.position = spawner1.transform.position;
-            }
-            else if (selectSpawn == 2)
-            {
-                transform.position = spawner2.transform.position;
-            }
-            else if (selectSpawn == 3)
-            {
-                transform.position = spawner3.transform.position;
-            }
-            else if (selectSpawn == 4)
-            {
-                transform.position = spawner4.transform.position;
-            }
-            Instantiate(enemyPrefab, transform.position, Quaternion.identity);
-            yield return new WaitForSeconds(spawnInterval);
+            enemigoLibre.transform.position = posicionAparicion;
+            enemigoLibre.SetActive(true);
         }
     }
 }

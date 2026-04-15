@@ -3,88 +3,40 @@
   "WorkspaceRootPath": "E:\\unity\\Multiplayer Test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\unity\\Multiplayer Test\\Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OVRCameraRig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OVRCameraRig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|e:\\unity\\multiplayer test\\assets\\scripts\\timerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|e:\\unity\\multiplayer test\\assets\\scripts\\playerhealthsolo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerhealthsolo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\PlayerHealthSolo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Singleplayer\\PlayerHealthSolo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\unity\\Multiplayer Test\\Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\unity\\Multiplayer Test\\Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OVRManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OVRManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|E:\\unity\\Multiplayer Test\\assets\\scripts\\cambiarescenamult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cambiarescenamult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|E:\\unity\\Multiplayer Test\\assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|E:\\unity\\Multiplayer Test\\assets\\scripts\\returntomap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\returntomap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|E:\\unity\\Multiplayer Test\\assets\\scripts\\playervr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playervr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|E:\\unity\\Multiplayer Test\\assets\\scripts\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|E:\\unity\\Multiplayer Test\\assets\\scripts\\vrlocaltonetworkmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vrlocaltonetworkmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\unity\\Multiplayer Test\\Library\\PackageCache\\com.unity.render-pipelines.universal@f70afd0d2146\\Shaders\\Lit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.render-pipelines.universal@f70afd0d2146\\Shaders\\Lit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|E:\\unity\\Multiplayer Test\\assets\\scripts\\playercombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|E:\\unity\\Multiplayer Test\\assets\\scripts\\leaveroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\leaveroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|E:\\unity\\Multiplayer Test\\assets\\scripts\\changeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|e:\\unity\\multiplayer test\\assets\\scripts\\changeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\changeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|E:\\unity\\Multiplayer Test\\assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|e:\\unity\\multiplayer test\\assets\\scripts\\multiplayer\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\multiplayer\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\unity\\Multiplayer Test\\Assets\\Scripts\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|e:\\unity\\multiplayer test\\assets\\scripts\\multiplayer\\vrlocaltonetworkmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\multiplayer\\vrlocaltonetworkmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\TimerScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Singleplayer\\TimerScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|e:\\unity\\multiplayer test\\assets\\scripts\\multiplayer\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\multiplayer\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\EnemyFolllow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Singleplayer\\EnemyFolllow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|e:\\unity\\multiplayer test\\assets\\scripts\\singleplayer\\batterystationsingle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\singleplayer\\batterystationsingle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\SpawnEnemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Singleplayer\\SpawnEnemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|E:\\unity\\Multiplayer Test\\assets\\scripts\\singleplayer\\gunsingle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\singleplayer\\gunsingle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|E:\\unity\\Multiplayer Test\\assets\\scripts\\singleplayer\\playerhealthsolo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\singleplayer\\playerhealthsolo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|E:\\unity\\Multiplayer Test\\assets\\scripts\\singleplayer\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\singleplayer\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|E:\\unity\\Multiplayer Test\\assets\\scripts\\singleplayer\\spawnenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BE13D0-5262-95EF-8D3F-A82331A0FC6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\singleplayer\\spawnenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -103,255 +55,115 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OVRCameraRig.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OVRCameraRig.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OVRCameraRig.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OVRCameraRig.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OVRCameraRig.cs",
-              "ViewState": "AgIAAM0AAAAAAAAAAADwv9wAAABfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T16:26:05.356Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TimerScript.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\TimerScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\TimerScript.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\TimerScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\TimerScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T16:21:49.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerHealthSolo.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\PlayerHealthSolo.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerHealthSolo.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\PlayerHealthSolo.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerHealthSolo.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAwwEUAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T16:19:43.506Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MetaXRFeature.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OpenXRFeatures\\MetaXRFeature.cs",
-              "ViewState": "AgIAAN8AAAAAAAAAAAAAwP0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T15:57:13.799Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OVRManager.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OVRManager.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OVRManager.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OVRManager.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.core@a87f85fa91d3\\Scripts\\OVRManager.cs",
-              "ViewState": "AgIAAF4IAAAAAAAAAADwv3YIAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T15:55:29.854Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "TimerScript.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\TimerScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Singleplayer\\TimerScript.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\TimerScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Singleplayer\\TimerScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T15:37:16.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerHealthSolo.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\PlayerHealthSolo.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Singleplayer\\PlayerHealthSolo.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\PlayerHealthSolo.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Singleplayer\\PlayerHealthSolo.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T15:35:57.423Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "EnemyFolllow.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\EnemyFolllow.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Singleplayer\\EnemyFolllow.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\EnemyFolllow.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Singleplayer\\EnemyFolllow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T15:20:11.581Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SpawnEnemy.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\SpawnEnemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Singleplayer\\SpawnEnemy.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\SpawnEnemy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Singleplayer\\SpawnEnemy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T15:16:20.599Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CambiarEscenaMult.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\CambiarEscenaMult.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CambiarEscenaMult.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\CambiarEscenaMult.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CambiarEscenaMult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T16:26:48.11Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ReturnToMap.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\ReturnToMap.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ReturnToMap.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\ReturnToMap.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ReturnToMap.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T17:49:04.249Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PlayerHealth.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\PlayerHealth.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerHealth.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\PlayerHealth.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerHealth.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAD4vxEAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T17:24:16.177Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T18:51:04.37Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "VRLocalToNetworkMapper.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\VRLocalToNetworkMapper.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\VRLocalToNetworkMapper.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\VRLocalToNetworkMapper.cs",
-              "RelativeToolTip": "Assets\\Scripts\\VRLocalToNetworkMapper.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBgAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T17:53:02.752Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Gun.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Gun.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Gun.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Gun.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Gun.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwEoAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T19:46:00.822Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PlayerVR.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\PlayerVR.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerVR.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\PlayerVR.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerVR.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T15:54:33.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "NetworkManager.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\NetworkManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\NetworkManager.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\NetworkManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\NetworkManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T15:46:29.775Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PlayerCombat.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\PlayerCombat.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerCombat.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\PlayerCombat.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerCombat.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T19:18:30.159Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LeaveRoom.cs",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\LeaveRoom.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\LeaveRoom.cs",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\LeaveRoom.cs",
-              "RelativeToolTip": "Assets\\Scripts\\LeaveRoom.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T15:34:29.051Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "ChangeUI.cs",
               "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\ChangeUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ChangeUI.cs",
               "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\ChangeUI.cs",
               "RelativeToolTip": "Assets\\Scripts\\ChangeUI.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAQwCQAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAowC0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T19:40:10.269Z"
+              "WhenOpened": "2026-04-07T21:50:49.702Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Lit.shader",
-              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Library\\PackageCache\\com.unity.render-pipelines.universal@f70afd0d2146\\Shaders\\Lit.shader",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@f70afd0d2146\\Shaders\\Lit.shader",
-              "ToolTip": "E:\\unity\\Multiplayer Test\\Library\\PackageCache\\com.unity.render-pipelines.universal@f70afd0d2146\\Shaders\\Lit.shader",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal@f70afd0d2146\\Shaders\\Lit.shader",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2026-02-18T15:44:09.546Z"
+              "DocumentIndex": 3,
+              "Title": "Gun.cs",
+              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Multiplayer\\Gun.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Multiplayer\\Gun.cs",
+              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Multiplayer\\Gun.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Multiplayer\\Gun.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAowGsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T21:26:03.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerHealth.cs",
+              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Multiplayer\\PlayerHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Multiplayer\\PlayerHealth.cs",
+              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Multiplayer\\PlayerHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Multiplayer\\PlayerHealth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T21:25:50.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VRLocalToNetworkMapper.cs",
+              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Multiplayer\\VRLocalToNetworkMapper.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Multiplayer\\VRLocalToNetworkMapper.cs",
+              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Multiplayer\\VRLocalToNetworkMapper.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Multiplayer\\VRLocalToNetworkMapper.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T20:49:16.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BatteryStationSingle.cs",
+              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\BatteryStationSingle.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Singleplayer\\BatteryStationSingle.cs",
+              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\BatteryStationSingle.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Singleplayer\\BatteryStationSingle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T19:14:33.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayerHealthSolo.cs",
+              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\PlayerHealthSolo.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Singleplayer\\PlayerHealthSolo.cs",
+              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\PlayerHealthSolo.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Singleplayer\\PlayerHealthSolo.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowCUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T16:55:23.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GunSingle.cs",
+              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\GunSingle.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Singleplayer\\GunSingle.cs",
+              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\GunSingle.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Singleplayer\\GunSingle.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwBsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T17:41:57.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Health.cs",
+              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\Health.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Singleplayer\\Health.cs",
+              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\Health.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Singleplayer\\Health.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T16:33:10.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SpawnEnemy.cs",
+              "DocumentMoniker": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\SpawnEnemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Singleplayer\\SpawnEnemy.cs",
+              "ToolTip": "E:\\unity\\Multiplayer Test\\Assets\\Scripts\\Singleplayer\\SpawnEnemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Singleplayer\\SpawnEnemy.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowDYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T18:28:24.015Z"
             }
           ]
         }
