@@ -18,3 +18,12 @@ UserSettings/
 *.mdb
 *.opendb
 *.VC.db
+# Carpetas de Visual Studio y caches locales
+.vs/
+.utmp/
+
+# Builds y archivos generados por Unity al compilar
+*.apk
+*.aab
+*_BurstDebugInformation_DoNotShip/
+*_BackUpThisFolder_ButDontShipItWithYourGame/

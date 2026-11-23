@@ -2,16 +2,25 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public int health = 20;
+    public int health = 20; // Vida con la que aparece el enemigo
+    private int currentHealth;
+
+    // Se llama cada vez que el pool de SpawnEnemy reactiva al enemigo
+    void OnEnable()
+    {
+        currentHealth = health;
+    }
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
+        if (currentHealth <= 0) return; // Ya esta muerto, evita sumar puntaje doble
 
-        if (health <= 0)
+        currentHealth -= damage;
+
+        if (currentHealth <= 0)
         {
             gameObject.SetActive(false);
-            ScoreSingle scoreScript = FindObjectOfType<ScoreSingle>();
+            ScoreSingle scoreScript = FindFirstObjectByType<ScoreSingle>();
             if (scoreScript != null)
             {
                 scoreScript.AddScore();

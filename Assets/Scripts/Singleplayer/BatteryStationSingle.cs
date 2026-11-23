@@ -11,10 +11,10 @@ public class BatteryStationSingle : MonoBehaviour
     }
     public void RechargeGun()
     {
-        GunSingle gun = FindObjectOfType<GunSingle>();
+        GunSingle gun = FindFirstObjectByType<GunSingle>();
         if (gun != null)
         {
-            gun.batteries += 1; // Aumenta la cantidad de baterías disponibles
+            gun.batteries += 1; // Aumenta la cantidad de baterÃ­as disponibles
         }
     }
 

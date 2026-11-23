@@ -9,22 +9,6 @@ public class ChangeUI : MonoBehaviour
     public GameObject imagen5;
     public GameObject imagen6;
 
-    private PlayerHealth healthPlayer;
-
-    private void Awake()
-    {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-
-        if (player != null)
-        {
-            healthPlayer = player.GetComponent<PlayerHealth>();
-        }
-        else
-        {
-            Debug.LogError("No se encontró un objeto con tag Player");
-        }
-    }
-
     public void CambiarImagen(int vida)
     {
         imagen1.SetActive(false);

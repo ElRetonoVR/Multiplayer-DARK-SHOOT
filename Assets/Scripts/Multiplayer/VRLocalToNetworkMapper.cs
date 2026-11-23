@@ -22,7 +22,7 @@ public class VRLocalToNetworkMapper : MonoBehaviour
         if (!pv.IsMine) return;
 
         // Buscar el LocalPlayerRig en la escena
-        var rig = FindObjectOfType<OVRCameraRig>();
+        var rig = FindFirstObjectByType<OVRCameraRig>();
 
         localHead = rig.centerEyeAnchor;
         localLeftHand = rig.leftHandAnchor;

@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviourPunCallbacks
 
         if (photonView.IsMine)
         {
-            ui = FindObjectOfType<ChangeUI>();
+            ui = FindFirstObjectByType<ChangeUI>();
         }
     }
 
@@ -35,16 +35,35 @@ public class PlayerHealth : MonoBehaviourPunCallbacks
 
         if (currentHealth <= 0)
         {
-            //FindObjectOfType<LeaveRoom>().Leave();
-            this.transform.position = LoserLounge; // Teletransporta al jugador a la sala de espera
-            Debug.Log("Player moved to Loser Lounge.");
+            TeleportToLoserLounge();
+            deaths++;
+            currentHealth = maxHealth; // Resetea la salud en lugar de salir de la sala
+
+            // Actualiza el HUD con la salud ya restablecida
             if (ui != null)
             {
                 ui.CambiarImagen(currentHealth);
             }
-            deaths++;
-            currentHealth = maxHealth; // Resetea la salud en lugar de salir de la sala
+
             Debug.Log("Player died. Total deaths: " + deaths);
         }
+    }
+
+    // El cuerpo de red sigue al OVRCameraRig local (VRLocalToNetworkMapper),
+    // por eso hay que mover el rig y no solo este objeto.
+    void TeleportToLoserLounge()
+    {
+        OVRCameraRig rig = FindFirstObjectByType<OVRCameraRig>();
+
+        if (rig != null)
+        {
+            rig.transform.position = LoserLounge;
+        }
+        else
+        {
+            transform.position = LoserLounge;
+        }
+
+        Debug.Log("Player moved to Loser Lounge.");
     }
 }

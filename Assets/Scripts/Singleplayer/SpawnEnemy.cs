@@ -16,13 +16,13 @@ public class SpawnEnemy : MonoBehaviour
     void Start()
     {
         // Try to find the TimerScript in scene
-        timerScript = FindObjectOfType<TimerScript>();
+        timerScript = FindFirstObjectByType<TimerScript>();
         if (timerScript != null)
         {
             initialTimerFromScript = timerScript.timer;
         }
 
-        // Llenamos el pool de una manera r·pida
+        // Llenamos el pool de una manera r√°pida
         for (int i = 0; i < cantidadTotalEnemigos; i++)
         {
             GameObject obj = Instantiate(enemyPrefab);

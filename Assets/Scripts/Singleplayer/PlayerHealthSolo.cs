@@ -1,15 +1,15 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 
 public class PlayerHealthSolo : MonoBehaviour
 {
-    public int maxHealth = 100; // Salud m·xima del jugador
+    public int maxHealth = 100; // Salud m√°xima del jugador
     [SerializeField] int currentHealth; // Salud actual del jugador que puede variar
-    public float noDamageTimer = 0f; //Tiempo sin haber recibido daÒo para la regeneraciÛn de salud
-    public float deathTimer = 0f; //Tiempo desde que el jugador "muriÛ" para permitirle escapar o recuperarse antes de volver a la normalidad
+    public float noDamageTimer = 0f; //Tiempo sin haber recibido da√±o para la regeneraci√≥n de salud
+    public float deathTimer = 0f; //Tiempo desde que el jugador "muri√≥" para permitirle escapar o recuperarse antes de volver a la normalidad
     public bool isDead = false; // Muerto o vivo
+    public float regeneracionPorSegundo = 20f; // Salud que recupera por segundo (independiente de los FPS)
+    private float regeneracionAcumulada = 0f; // Fracciones de salud acumuladas entre frames
     public Text textScore; // Puntaje que se muestra en pantalla
     ScoreSingle scoreSingle; // Referencia al componente ScoreSingle para actualizar el puntaje al morir
 
@@ -22,13 +22,19 @@ public class PlayerHealthSolo : MonoBehaviour
     {
         noDamageTimer += Time.deltaTime;
         textScore.text = "Score: " + scoreSingle.GetScore();
-        if (noDamageTimer > 8 && currentHealth < maxHealth) //Si han pasado m·s de 8 segundos sin recibir daÒo y la salud actual es menor que la salud m·xima, regenera salud hasta el tope
+        if (noDamageTimer > 8 && currentHealth < maxHealth) //Si han pasado m√°s de 8 segundos sin recibir da√±o y la salud actual es menor que la salud m√°xima, regenera salud hasta el tope
         {
-            currentHealth++;
+            regeneracionAcumulada += regeneracionPorSegundo * Time.deltaTime;
+            int puntos = Mathf.FloorToInt(regeneracionAcumulada);
+            if (puntos > 0)
+            {
+                currentHealth = Mathf.Min(currentHealth + puntos, maxHealth);
+                regeneracionAcumulada -= puntos;
+            }
         }
         if (isDead) //Registra la muerte del jugador, le quita puntaje y le da la oportunidad de escapar o pelear por 5 segundos
         {
-            deathTimer += Time.deltaTime; // Si han pasado m·s de X segundos desde la muerte, el jugador vuelve a la normalidad
+            deathTimer += Time.deltaTime; // Si han pasado m√°s de X segundos desde la muerte, el jugador vuelve a la normalidad
             if (deathTimer >= 5f)
             {
                 isDead = false;
@@ -41,16 +47,17 @@ public class PlayerHealthSolo : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            TakeDamage(20); // Cada enemigo causa 20 puntos de daÒo
+            TakeDamage(20); // Cada enemigo causa 20 puntos de da√±o
         }
     }
 
     public void TakeDamage(int damage)
     {
-        if (isDead) return; // Evita recibir daÒo mientras est· "muerto" para permitir al jugador escapar o recuperarse
+        if (isDead) return; // Evita recibir da√±o mientras est√° "muerto" para permitir al jugador escapar o recuperarse
 
         currentHealth -= damage;
         noDamageTimer = 0f;
+        regeneracionAcumulada = 0f;
 
         if (currentHealth <= 0)
         {
@@ -65,10 +72,7 @@ public class PlayerHealthSolo : MonoBehaviour
         gun.gunLight.intensity = 40f;
         gun.gunLight.range = 15f;
         gun.ammoCapacity = 20;
-        TimerScript timerScript = FindAnyObjectByType<TimerScript>();
         isDead = true;
         scoreSingle.downScore();
-        
     }
 }
-    

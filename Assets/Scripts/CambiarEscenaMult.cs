@@ -1,4 +1,3 @@
-using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +7,6 @@ public class CambiarEscenaMult : MonoBehaviour
 
     public void CambiarEscena(string nombreEscena)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(nombreEscena);
+        SceneManager.LoadScene(nombreEscena);
     }
 }

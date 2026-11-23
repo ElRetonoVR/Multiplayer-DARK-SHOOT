@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class LeaveRoom : MonoBehaviourPunCallbacks
 {
+    // Escena a la que se regresa al salir de la sala (debe estar en Build Settings)
+    public string escenaAlSalir = "Lobby";
+
     public void Leave()
     {
         PhotonNetwork.LeaveRoom();
@@ -11,7 +14,6 @@ public class LeaveRoom : MonoBehaviourPunCallbacks
 
     public override void OnLeftRoom()
     {
-        // Load the main menu or respawn scene here
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene(escenaAlSalir);
     }
 }

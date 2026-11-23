@@ -41,7 +41,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     void AlignToSpawn(Transform spawnPoint)
     {
-        OVRCameraRig rig = FindObjectOfType<OVRCameraRig>();
+        OVRCameraRig rig = FindFirstObjectByType<OVRCameraRig>();
 
         if (rig == null) return;
 
