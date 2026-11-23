@@ -6682,7 +6682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e77addc6b3c5ae45a9751f4bc429982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimerScript
-  timer: 90
+  timer: 180
   Contador: {fileID: 1680999146}
 --- !u!1 &744822850
 GameObject:

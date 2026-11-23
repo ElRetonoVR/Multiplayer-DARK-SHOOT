@@ -12,11 +12,19 @@ public class PlayerHealthSolo : MonoBehaviour
     private float regeneracionAcumulada = 0f; // Fracciones de salud acumuladas entre frames
     public Text textScore; // Puntaje que se muestra en pantalla
     ScoreSingle scoreSingle; // Referencia al componente ScoreSingle para actualizar el puntaje al morir
+    public float segundosPerdidosAlMorir = 8f; // GDD: morir quita 8 segundos del tiempo
+    public JumpscareBloom jumpscare; // Susto del Bloom al alcanzar al jugador (opcional, si queda vacio se busca en la escena)
+    TimerScript timerScript; // Referencia al temporizador para restar tiempo al morir
 
     void Start()
     {
         currentHealth = maxHealth;
         scoreSingle = FindAnyObjectByType<ScoreSingle>(); //Busca el componente ScoreSingle en la escena para actualizar el puntaje y no tener que arrastrarlo manualmente al inspector
+        timerScript = FindAnyObjectByType<TimerScript>();
+        if (jumpscare == null)
+        {
+            jumpscare = FindAnyObjectByType<JumpscareBloom>();
+        }
     }
     void Update()
     {
@@ -47,6 +55,10 @@ public class PlayerHealthSolo : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            if (!isDead && jumpscare != null)
+            {
+                jumpscare.Activar(); // El Bloom alcanzo al jugador
+            }
             TakeDamage(20); // Cada enemigo causa 20 puntos de daño
         }
     }
@@ -74,5 +86,9 @@ public class PlayerHealthSolo : MonoBehaviour
         gun.ammoCapacity = 20;
         isDead = true;
         scoreSingle.downScore();
+        if (timerScript != null)
+        {
+            timerScript.timer = Mathf.Max(timerScript.timer - segundosPerdidosAlMorir, 0f);
+        }
     }
 }

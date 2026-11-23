@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class TimerScript : MonoBehaviour
 {
-    public float timer = 60f;
+    public float timer = 180f; // 3 minutos, segun el GDD
     public Text Contador;
     private bool terminado = false;
 

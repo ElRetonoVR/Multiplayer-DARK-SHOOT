@@ -6,6 +6,10 @@ public class SpawnEnemy : MonoBehaviour
     public GameObject enemyPrefab;
     public Transform[] puntosDeSpawn;
     public int cantidadTotalEnemigos = 30;
+
+    [Header("Aparicion por tercio de la partida (GDD: cada 6 / 5 / 3 s)")]
+    public float[] intervalosPorTercio = { 6f, 5f, 3f }; // Segundos entre oleadas en cada tercio
+    public int[] enemigosPorTercio = { 1, 2, 3 };       // Enemigos que aparecen en cada oleada
     private List<GameObject> poolDeEnemigos = new List<GameObject>();
     private float timer = 0f, temporizadorSpawn = 0f;
 
@@ -55,10 +59,11 @@ public class SpawnEnemy : MonoBehaviour
         float oneThird = initial / 3f;
         float twoThirds = oneThird * 2f;
 
-        float spawnInterval = elapsed >= twoThirds ? 2f : (elapsed >= oneThird ? 3f : 4f);
+        int tercio = elapsed >= twoThirds ? 2 : (elapsed >= oneThird ? 1 : 0);
+        float spawnInterval = intervalosPorTercio[Mathf.Min(tercio, intervalosPorTercio.Length - 1)];
         if (temporizadorSpawn >= spawnInterval)
         {
-            int enemigosSpawn = elapsed >= twoThirds ? 3 : (elapsed >= oneThird ? 2 : 1);
+            int enemigosSpawn = enemigosPorTercio[Mathf.Min(tercio, enemigosPorTercio.Length - 1)];
             for (int i = 0; i < enemigosSpawn; i++)
             {
                 AparecerEnemigoSegunTiempo(elapsed);
