@@ -9,12 +9,24 @@ public class SpawnEnemy : MonoBehaviour
     private List<GameObject> poolDeEnemigos = new List<GameObject>();
     private float timer = 0f, temporizadorSpawn = 0f;
 
+    // New: reference to the countdown timer script and its initial value
+    private TimerScript timerScript;
+    private float initialTimerFromScript = -1f;
+
     void Start()
     {
+        // Try to find the TimerScript in scene
+        timerScript = FindObjectOfType<TimerScript>();
+        if (timerScript != null)
+        {
+            initialTimerFromScript = timerScript.timer;
+        }
+
         // Llenamos el pool de una manera rápida
         for (int i = 0; i < cantidadTotalEnemigos; i++)
         {
             GameObject obj = Instantiate(enemyPrefab);
+            if (obj == null) continue;
             obj.SetActive(false);
             poolDeEnemigos.Add(obj);
         }
@@ -22,16 +34,34 @@ public class SpawnEnemy : MonoBehaviour
 
     void Update()
     {
-        timer += Time.deltaTime;
+        // If we have a TimerScript, compute elapsed from its countdown; otherwise use local timer
+        float elapsed;
+        if (timerScript != null && initialTimerFromScript > 0f)
+        {
+            float remaining = timerScript.timer;
+            elapsed = Mathf.Clamp(initialTimerFromScript - remaining, 0f, initialTimerFromScript);
+        }
+        else
+        {
+            timer += Time.deltaTime;
+            elapsed = timer;
+        }
+
         temporizadorSpawn += Time.deltaTime;
-        // 1. TERNARIO para el intervalo (Se calcula al vuelo, eliminando la variable global)
-        float spawnInterval = timer >= 120f ? 2f : (timer >= 60f ? 3f : 4f);
+
+        // Use fractions of the initial timer (1/3 and 2/3) to determine spawn behavior.
+        // If TimerScript wasn't found, default initial to 180f to preserve previous behavior.
+        float initial = (initialTimerFromScript > 0f) ? initialTimerFromScript : 180f;
+        float oneThird = initial / 3f;
+        float twoThirds = oneThird * 2f;
+
+        float spawnInterval = elapsed >= twoThirds ? 2f : (elapsed >= oneThird ? 3f : 4f);
         if (temporizadorSpawn >= spawnInterval)
         {
-            int enemigosSpawn = timer >= 120f ? 3 : (timer >= 60f ? 2 : 1);
+            int enemigosSpawn = elapsed >= twoThirds ? 3 : (elapsed >= oneThird ? 2 : 1);
             for (int i = 0; i < enemigosSpawn; i++)
             {
-                AparecerEnemigoSegunTiempo(timer);
+                AparecerEnemigoSegunTiempo(elapsed);
             }
             temporizadorSpawn = 0f;
         }
@@ -39,17 +69,29 @@ public class SpawnEnemy : MonoBehaviour
 
     public void AparecerEnemigoSegunTiempo(float tiempoActual)
     {
-        // 2. TERNARIO para el límite de puntos de aparicion 
-        int limiteSpawners = tiempoActual >= 120f ? 4 : (tiempoActual >= 60f ? 3 : 2);
-        Vector3 posicionAparicion = puntosDeSpawn[Random.Range(0, limiteSpawners)].position;
+        // Determine limit based on thirds of the initial timer (maps original 180->120/60 behavior)
+        float initial = (initialTimerFromScript > 0f) ? initialTimerFromScript : 180f;
+        float oneThird = initial / 3f;
+        float twoThirds = oneThird * 2f;
 
-        // 3. MINIMA EXPRESION: Usamos .Find() en lugar del foreach gigante
-        GameObject enemigoLibre = poolDeEnemigos.Find(e => !e.activeInHierarchy);
+        int limiteSpawners = tiempoActual >= twoThirds ? 4 : (tiempoActual >= oneThird ? 3 : 2);
 
-        if (enemigoLibre) // Si encontró uno libre (no es nulo)
+        // Ensure we don't index outside puntosDeSpawn
+        limiteSpawners = Mathf.Clamp(limiteSpawners, 1, Mathf.Max(1, puntosDeSpawn != null ? puntosDeSpawn.Length : 1));
+        int spawnIndex = Random.Range(0, limiteSpawners);
+        Vector3 posicionAparicion = puntosDeSpawn[spawnIndex].position;
+
+        // Find inactive enemy safely
+        GameObject enemigoLibre = poolDeEnemigos.Find(e => e != null && !e.activeInHierarchy);
+
+        if (enemigoLibre != null)
         {
             enemigoLibre.transform.position = posicionAparicion;
             enemigoLibre.SetActive(true);
+        }
+        else
+        {
+            Debug.LogWarning("SpawnEnemy: no hay enemigos libres en el pool. Considera aumentar cantidadTotalEnemigos.");
         }
     }
 }

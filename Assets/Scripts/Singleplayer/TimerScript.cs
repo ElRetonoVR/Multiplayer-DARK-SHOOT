@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class TimerScript : MonoBehaviour
 {
-    public float timer = 180f;
+    public float timer = 60f;
     public Text Contador;
     public void Update()
     {
