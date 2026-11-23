@@ -1,0 +1,140 @@
+{
+  "Assets/DarkShot/Editor/DarkShotSetup.cs": {
+    "mtime": 1795465337.8215153,
+    "seen": 1795465576.9555154,
+    "ast_hash": "1958fb296c04e0283454d877f2cc29f9",
+    "semantic_hash": "1958fb296c04e0283454d877f2cc29f9"
+  },
+  "Assets/DarkShot/Scripts/BloomAnimator.cs": {
+    "mtime": 1795465337.8911686,
+    "seen": 1795465576.955523,
+    "ast_hash": "446ae1f4a0ff6bcebce470bea3eb528f",
+    "semantic_hash": "446ae1f4a0ff6bcebce470bea3eb528f"
+  },
+  "Assets/Scripts/CambiarEscenaMult.cs": {
+    "mtime": 1795465337.8262181,
+    "seen": 1795465576.9555268,
+    "ast_hash": "2d7b5ee181860978ee7db503b0a6c7bd",
+    "semantic_hash": "2d7b5ee181860978ee7db503b0a6c7bd"
+  },
+  "Assets/Scripts/ChangeUI.cs": {
+    "mtime": 1795465337.835384,
+    "seen": 1795465576.9555292,
+    "ast_hash": "3e0df8cf1a5ff04d2916955ad6e5a80b",
+    "semantic_hash": "3e0df8cf1a5ff04d2916955ad6e5a80b"
+  },
+  "Assets/Scripts/LeaveRoom.cs": {
+    "mtime": 1795465337.8398876,
+    "seen": 1795465576.9555314,
+    "ast_hash": "034f6580faeeca9e99d0b8e46929a2aa",
+    "semantic_hash": "034f6580faeeca9e99d0b8e46929a2aa"
+  },
+  "Assets/Scripts/Multiplayer/Gun.cs": {
+    "mtime": 1795465337.8964603,
+    "seen": 1795465576.955533,
+    "ast_hash": "418993236dcbb631b2305bdaa36a2c38",
+    "semantic_hash": "418993236dcbb631b2305bdaa36a2c38"
+  },
+  "Assets/Scripts/Multiplayer/PlayerHealth.cs": {
+    "mtime": 1795465337.9017828,
+    "seen": 1795465576.955535,
+    "ast_hash": "2c7a7eca8746d341988e01cc3f10e335",
+    "semantic_hash": "2c7a7eca8746d341988e01cc3f10e335"
+  },
+  "Assets/Scripts/Multiplayer/VRLocalToNetworkMapper.cs": {
+    "mtime": 1795465337.9071727,
+    "seen": 1795465576.955536,
+    "ast_hash": "c710a39375fe376edca49b837fb0fc00",
+    "semantic_hash": "c710a39375fe376edca49b837fb0fc00"
+  },
+  "Assets/Scripts/NetworkManager.cs": {
+    "mtime": 1795465337.8309126,
+    "seen": 1795465576.955537,
+    "ast_hash": "81c6ead5f4ed719b7dda9c61ae6fed19",
+    "semantic_hash": "81c6ead5f4ed719b7dda9c61ae6fed19"
+  },
+  "Assets/Scripts/PlayerVR.cs": {
+    "mtime": 1795465337.8448627,
+    "seen": 1795465576.9555383,
+    "ast_hash": "4153d34d67cb5e9096fc87dbd12fa457",
+    "semantic_hash": "4153d34d67cb5e9096fc87dbd12fa457"
+  },
+  "Assets/Scripts/Singleplayer/BatteryStationSingle.cs": {
+    "mtime": 1795465337.8806136,
+    "seen": 1795465576.9555392,
+    "ast_hash": "d394c3b1b36967d40e99e8fb06746aef",
+    "semantic_hash": "d394c3b1b36967d40e99e8fb06746aef"
+  },
+  "Assets/Scripts/Singleplayer/GunSingle.cs": {
+    "mtime": 1795465337.870069,
+    "seen": 1795465576.9555404,
+    "ast_hash": "27c83c29daec8cee5842edfc8583279c",
+    "semantic_hash": "27c83c29daec8cee5842edfc8583279c"
+  },
+  "Assets/Scripts/Singleplayer/Health.cs": {
+    "mtime": 1795465337.8564696,
+    "seen": 1795465576.9555418,
+    "ast_hash": "595b7fb46a5279f732b1ab6c60b8e29a",
+    "semantic_hash": "595b7fb46a5279f732b1ab6c60b8e29a"
+  },
+  "Assets/Scripts/Singleplayer/JumpscareBloom.cs": {
+    "mtime": 1795465337.885941,
+    "seen": 1795465576.9555428,
+    "ast_hash": "153ad50044044fea45824ad18b3a4b45",
+    "semantic_hash": "153ad50044044fea45824ad18b3a4b45"
+  },
+  "Assets/Scripts/Singleplayer/PlayerHealthSolo.cs": {
+    "mtime": 1795465337.8529434,
+    "seen": 1795465576.9555438,
+    "ast_hash": "3211880940f70530b85dd8f68201b5f8",
+    "semantic_hash": "3211880940f70530b85dd8f68201b5f8"
+  },
+  "Assets/Scripts/Singleplayer/ScoreSingle.cs": {
+    "mtime": 1795465337.8637307,
+    "seen": 1795465576.9555445,
+    "ast_hash": "ff01930e53c7973d652c978647c5d3ab",
+    "semantic_hash": "ff01930e53c7973d652c978647c5d3ab"
+  },
+  "Assets/Scripts/Singleplayer/SpawnEnemy.cs": {
+    "mtime": 1795465337.8599966,
+    "seen": 1795465576.955546,
+    "ast_hash": "a4f2998d596dccca639717fbb2462cab",
+    "semantic_hash": "a4f2998d596dccca639717fbb2462cab"
+  },
+  "Assets/Scripts/Singleplayer/TimerScript.cs": {
+    "mtime": 1795465337.8492591,
+    "seen": 1795465576.9555476,
+    "ast_hash": "bf8965f09507cf00e784c0e7874b1f1d",
+    "semantic_hash": "bf8965f09507cf00e784c0e7874b1f1d"
+  },
+  "Assets/Scripts/Singleplayer/enemyNav.cs": {
+    "mtime": 1795465337.8754435,
+    "seen": 1795465576.9555488,
+    "ast_hash": "cef2e5008584a057bc993243c28c1e09",
+    "semantic_hash": "cef2e5008584a057bc993243c28c1e09"
+  },
+  "docs/DARK_GDD.md": {
+    "mtime": 1795465385.232956,
+    "seen": 1795465576.95555,
+    "ast_hash": "625eab14be1c998fe5414cd2821dc7e1",
+    "semantic_hash": "625eab14be1c998fe5414cd2821dc7e1"
+  },
+  "docs/ESCENAS.md": {
+    "mtime": 1795465385.5373056,
+    "seen": 1795465576.955551,
+    "ast_hash": "f77964f1ae69bbf1d8b49e4cd497c8df",
+    "semantic_hash": "f77964f1ae69bbf1d8b49e4cd497c8df"
+  },
+  "docs/GDD_UTR_2026.md": {
+    "mtime": 1795465385.312956,
+    "seen": 1795465576.9555523,
+    "ast_hash": "2ccf56f6759c8b5281cd6c04332725f2",
+    "semantic_hash": "2ccf56f6759c8b5281cd6c04332725f2"
+  },
+  "docs/Guia_Multijugador_VR.md": {
+    "mtime": 1795465385.536064,
+    "seen": 1795465576.9555533,
+    "ast_hash": "b9d64502fe973809503dd11e27f281e2",
+    "semantic_hash": "b9d64502fe973809503dd11e27f281e2"
+  }
+}

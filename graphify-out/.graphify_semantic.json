@@ -1,0 +1,1899 @@
+{
+ "nodes": [
+  {
+   "id": "docs_dark_gdd_dark_shot",
+   "label": "DARK SHOT (juego single-player)",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "rationale": "Laser tag de terror VR: un sobreviviente solo, a oscuras, mata Blooms antes de que se acabe el tiempo."
+  },
+  {
+   "id": "docs_dark_gdd_jugador_sobreviviente",
+   "label": "Jugador sobreviviente",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_dark_gdd_partida_3_min",
+   "label": "Partida de 3 minutos",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_dark_gdd_bateria_5_por_disparo",
+   "label": "Batería: −5% por disparo",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "rationale": "La batería es a la vez munición y luz: 20 disparos por carga."
+  },
+  {
+   "id": "docs_dark_gdd_ceguera_sin_bateria",
+   "label": "Sin batería el jugador queda ciego",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_dark_gdd_dano_20_por_golpe",
+   "label": "Cada golpe quita 20% de vida",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_dark_gdd_curacion_8_s",
+   "label": "Curación tras 8 s sin daño",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_dark_gdd_muerte_penalizacion",
+   "label": "Al morir: −8 s, vida y batería al 100%, 5 s de invencibilidad",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_dark_gdd_recarga_baterias_mapa",
+   "label": "Recarga con baterías del mapa (botón X)",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_dark_gdd_controles_vr",
+   "label": "Controles: gatillo derecho, X, joystick",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_dark_gdd_the_bloom",
+   "label": "The Bloom (enemigo)",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "rationale": "Parásito que no persigue para matar sino para crecer: lento pero nunca se detiene."
+  },
+  {
+   "id": "docs_dark_gdd_bloom_persigue_siempre",
+   "label": "El Bloom siempre ve al jugador y lo persigue",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_dark_gdd_bloom_un_disparo",
+   "label": "El Bloom muere de un disparo",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_dark_gdd_bloom_aparicion_6_5_3",
+   "label": "El Bloom aparece cada 6 / 5 / 3 s",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_dark_gdd_enemigos_infinitos",
+   "label": "Enemigos infinitos",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_dark_gdd_bloom_golpe_contacto",
+   "label": "El Bloom golpea solo junto al jugador",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_dark_gdd_ataque_principal_jumpscare",
+   "label": "Ataque principal: jumpscare de la cara del Bloom",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "rationale": "Pantalla oscura, sonido cortado y la cara muy cerca: la sensación de que ya te alcanzó."
+  },
+  {
+   "id": "docs_dark_gdd_variantes_bloom",
+   "label": "Variantes del Bloom (bata de laboratorio, ingeniero)",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_dark_gdd_ramas_branches",
+   "label": "Ramas (Branches)",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "rationale": "Reducen visibilidad y suben la tensión; su mecánica queda para entregas futuras."
+  },
+  {
+   "id": "docs_dark_gdd_oscuridad_como_mecanica",
+   "label": "La oscuridad como mecánica",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_dark_gdd_historia_cdc_laboratorio",
+   "label": "Historia: equipo del CDC en un laboratorio subterráneo infectado",
+   "file_type": "concept",
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_laser_project",
+   "label": "Laser Project (laser tag PvP multijugador)",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "rationale": "Laser tag VR en oscuridad total; la única luz es la linterna del arma."
+  },
+  {
+   "id": "docs_gdd_utr_2026_linterna_se_debilita",
+   "label": "Linterna que se debilita con cada disparo",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_arma_laser_energia",
+   "label": "Arma láser sin munición física, consume energía",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_niveles_brillo",
+   "label": "Niveles de brillo: 100% / 50% / 10% / 0%",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_enemigos_sueltan_baterias",
+   "label": "Los enemigos derrotados sueltan 1-3 baterías",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_agarrar_baterias",
+   "label": "Agarrar baterías con la mano libre",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_baterias_en_el_centro",
+   "label": "Baterías que aparecen en el centro con el tiempo",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_marcador_puntos",
+   "label": "Marcador de impactos, eliminaciones y puntos",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_tabla_resultados",
+   "label": "Tabla de resultados final",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_vibracion_haptica",
+   "label": "Vibración al disparar y al recibir daño",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_indicador_energia_ui",
+   "label": "Indicador de energía del arma (UI)",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_modo_todos_contra_todos",
+   "label": "Modo todos contra todos (2-4 jugadores)",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_modo_por_equipos",
+   "label": "Modo por equipos",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_networking_photon_netcode",
+   "label": "Networking con Photon o Netcode",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_requisitos_90fps_2gb",
+   "label": "Requisitos: 90 FPS, < 2 GB, partidas de 4 jugadores",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_tension_disparar_vs_ver",
+   "label": "Tensión estratégica: disparar o ver",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_cooperacion_forzada",
+   "label": "Cooperación forzada para no quedar ciego",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_gdd_utr_2026_estilo_low_poly",
+   "label": "Estilo low-poly oscuro con neones",
+   "file_type": "concept",
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_guia_multijugador_vr_script_networkmanager",
+   "label": "Script NetworkManager de la guía (JoinOrCreateRoom + PhotonNetwork.Instantiate)",
+   "file_type": "concept",
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_guia_multijugador_vr_spawnpoints",
+   "label": "SpawnPoints del jugador de red",
+   "file_type": "concept",
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_guia_multijugador_vr_prefab_playervr",
+   "label": "Prefab PlayerVR en Photon/PhotonUnityNetworking/Resources",
+   "file_type": "concept",
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "rationale": "Photon solo instancia prefabs que están en una carpeta Resources."
+  },
+  {
+   "id": "docs_guia_multijugador_vr_photon_view",
+   "label": "PhotonView y PhotonTransformView",
+   "file_type": "concept",
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_guia_multijugador_vr_script_vrlocaltonetworkmapper",
+   "label": "Script VRLocalToNetworkMapper de la guía",
+   "file_type": "concept",
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_guia_multijugador_vr_meta_building_blocks",
+   "label": "Meta Building Blocks (Camera Rig, Controller Tracking, Interaction Rig, Grab Interaction)",
+   "file_type": "concept",
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_guia_multijugador_vr_photon_app_id",
+   "label": "App ID de Photon (PUN)",
+   "file_type": "concept",
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_escenas_escena_arena",
+   "label": "Escena Arena (Assets/Scenes/Arena.unity)",
+   "file_type": "concept",
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_escenas_escena_samplescene",
+   "label": "Escena SampleScene (Assets/Scenes/SampleScene.unity)",
+   "file_type": "concept",
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "docs_escenas_escena_lobby",
+   "label": "Escena Lobby (Assets/Scenes/Lobby.unity)",
+   "file_type": "concept",
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  }
+ ],
+ "edges": [
+  {
+   "source": "docs_dark_gdd_dark_shot",
+   "target": "docs_dark_gdd_jugador_sobreviviente",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_dark_shot",
+   "target": "docs_dark_gdd_partida_3_min",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_dark_shot",
+   "target": "docs_dark_gdd_the_bloom",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_dark_shot",
+   "target": "docs_dark_gdd_oscuridad_como_mecanica",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_dark_shot",
+   "target": "docs_dark_gdd_historia_cdc_laboratorio",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_dark_shot",
+   "target": "docs_dark_gdd_ramas_branches",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_jugador_sobreviviente",
+   "target": "docs_dark_gdd_bateria_5_por_disparo",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_jugador_sobreviviente",
+   "target": "docs_dark_gdd_dano_20_por_golpe",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_jugador_sobreviviente",
+   "target": "docs_dark_gdd_curacion_8_s",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_jugador_sobreviviente",
+   "target": "docs_dark_gdd_muerte_penalizacion",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_jugador_sobreviviente",
+   "target": "docs_dark_gdd_recarga_baterias_mapa",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_jugador_sobreviviente",
+   "target": "docs_dark_gdd_controles_vr",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_jugador_sobreviviente",
+   "target": "docs_dark_gdd_ceguera_sin_bateria",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_the_bloom",
+   "target": "docs_dark_gdd_bloom_persigue_siempre",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_the_bloom",
+   "target": "docs_dark_gdd_bloom_un_disparo",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_the_bloom",
+   "target": "docs_dark_gdd_bloom_aparicion_6_5_3",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_the_bloom",
+   "target": "docs_dark_gdd_enemigos_infinitos",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_the_bloom",
+   "target": "docs_dark_gdd_bloom_golpe_contacto",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_the_bloom",
+   "target": "docs_dark_gdd_ataque_principal_jumpscare",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_the_bloom",
+   "target": "docs_dark_gdd_variantes_bloom",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_bateria_5_por_disparo",
+   "target": "docs_dark_gdd_ceguera_sin_bateria",
+   "relation": "conceptually_related_to",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_dark_gdd_oscuridad_como_mecanica",
+   "target": "docs_dark_gdd_ceguera_sin_bateria",
+   "relation": "conceptually_related_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.85,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_timerscript_timerscript",
+   "target": "docs_dark_gdd_partida_3_min",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_gunsingle_gunsingle",
+   "target": "docs_dark_gdd_bateria_5_por_disparo",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_gunsingle_gunsingle",
+   "target": "docs_dark_gdd_ceguera_sin_bateria",
+   "relation": "conceptually_related_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.75,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_gunsingle_gunsingle",
+   "target": "docs_dark_gdd_controles_vr",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.75,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_playerhealthsolo_playerhealthsolo",
+   "target": "docs_dark_gdd_dano_20_por_golpe",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_playerhealthsolo_playerhealthsolo",
+   "target": "docs_dark_gdd_curacion_8_s",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_playerhealthsolo_playerhealthsolo",
+   "target": "docs_dark_gdd_muerte_penalizacion",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_timerscript_timerscript",
+   "target": "docs_dark_gdd_muerte_penalizacion",
+   "relation": "shares_data_with",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_batterystationsingle_batterystationsingle",
+   "target": "docs_dark_gdd_recarga_baterias_mapa",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.85,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_enemynav_enemyfollow",
+   "target": "docs_dark_gdd_bloom_persigue_siempre",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_enemynav_enemyfollow",
+   "target": "docs_dark_gdd_bloom_golpe_contacto",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_darkshot_scripts_bloomanimator_bloomanimator",
+   "target": "docs_dark_gdd_bloom_golpe_contacto",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.85,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_playerhealthsolo_playerhealthsolo",
+   "target": "docs_dark_gdd_bloom_golpe_contacto",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_health_health",
+   "target": "docs_dark_gdd_bloom_un_disparo",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.85,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_spawnenemy_spawnenemy",
+   "target": "docs_dark_gdd_bloom_aparicion_6_5_3",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_spawnenemy_spawnenemy",
+   "target": "docs_dark_gdd_enemigos_infinitos",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_spawnenemy_spawnenemy",
+   "target": "docs_dark_gdd_variantes_bloom",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_darkshot_editor_darkshotsetup_darkshotsetup",
+   "target": "docs_dark_gdd_variantes_bloom",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_darkshot_editor_darkshotsetup_darkshotsetup",
+   "target": "docs_dark_gdd_the_bloom",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_darkshot_scripts_bloomanimator_bloomanimator",
+   "target": "docs_dark_gdd_the_bloom",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_darkshot_editor_darkshotsetup_darkshotsetup",
+   "target": "docs_dark_gdd_ramas_branches",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_darkshot_editor_darkshotsetup_darkshotsetup",
+   "target": "docs_dark_gdd_ataque_principal_jumpscare",
+   "relation": "conceptually_related_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.85,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_jumpscarebloom_jumpscarebloom",
+   "target": "docs_dark_gdd_ataque_principal_jumpscare",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_playerhealthsolo_playerhealthsolo",
+   "target": "docs_dark_gdd_ataque_principal_jumpscare",
+   "relation": "references",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_jumpscarebloom_jumpscarebloom",
+   "target": "docs_dark_gdd_oscuridad_como_mecanica",
+   "relation": "conceptually_related_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.75,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_scoresingle_scoresingle",
+   "target": "docs_dark_gdd_jugador_sobreviviente",
+   "relation": "conceptually_related_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.65,
+   "source_file": "docs/DARK_GDD.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_linterna_se_debilita",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_arma_laser_energia",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_niveles_brillo",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_enemigos_sueltan_baterias",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_agarrar_baterias",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_baterias_en_el_centro",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_marcador_puntos",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_tabla_resultados",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_vibracion_haptica",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_indicador_energia_ui",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_modo_todos_contra_todos",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_modo_por_equipos",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_networking_photon_netcode",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_requisitos_90fps_2gb",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_tension_disparar_vs_ver",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_cooperacion_forzada",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_laser_project",
+   "target": "docs_gdd_utr_2026_estilo_low_poly",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_linterna_se_debilita",
+   "target": "docs_gdd_utr_2026_tension_disparar_vs_ver",
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_enemigos_sueltan_baterias",
+   "target": "docs_gdd_utr_2026_linterna_se_debilita",
+   "relation": "conceptually_related_to",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_multiplayer_gun_gun",
+   "target": "docs_gdd_utr_2026_arma_laser_energia",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_multiplayer_gun_gun",
+   "target": "docs_gdd_utr_2026_linterna_se_debilita",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_multiplayer_gun_gun",
+   "target": "docs_gdd_utr_2026_niveles_brillo",
+   "relation": "conceptually_related_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.75,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_multiplayer_playerhealth_playerhealth",
+   "target": "docs_gdd_utr_2026_marcador_puntos",
+   "relation": "conceptually_related_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.65,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_changeui_changeui",
+   "target": "docs_gdd_utr_2026_indicador_energia_ui",
+   "relation": "conceptually_related_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.65,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_networkmanager_networkmanager",
+   "target": "docs_gdd_utr_2026_networking_photon_netcode",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_multiplayer_vrlocaltonetworkmapper_vrlocaltonetworkmapper",
+   "target": "docs_gdd_utr_2026_networking_photon_netcode",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.85,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_networkmanager_networkmanager",
+   "target": "docs_gdd_utr_2026_modo_todos_contra_todos",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.75,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_networkmanager_networkmanager",
+   "target": "docs_gdd_utr_2026_requisitos_90fps_2gb",
+   "relation": "conceptually_related_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.75,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_leaveroom_leaveroom",
+   "target": "docs_gdd_utr_2026_tabla_resultados",
+   "relation": "conceptually_related_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.55,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_linterna_se_debilita",
+   "target": "docs_dark_gdd_bateria_5_por_disparo",
+   "relation": "semantically_similar_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_tension_disparar_vs_ver",
+   "target": "docs_dark_gdd_oscuridad_como_mecanica",
+   "relation": "semantically_similar_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.85,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_enemigos_sueltan_baterias",
+   "target": "docs_dark_gdd_recarga_baterias_mapa",
+   "relation": "semantically_similar_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.75,
+   "source_file": "docs/GDD_UTR_2026.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_guia_multijugador_vr_configuración_multijugador",
+   "target": "docs_guia_multijugador_vr_script_networkmanager",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_guia_multijugador_vr_configuración_multijugador",
+   "target": "docs_guia_multijugador_vr_spawnpoints",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_guia_multijugador_vr_configuración_multijugador",
+   "target": "docs_guia_multijugador_vr_prefab_playervr",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_guia_multijugador_vr_configuración_multijugador",
+   "target": "docs_guia_multijugador_vr_photon_view",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_guia_multijugador_vr_configuración_multijugador",
+   "target": "docs_guia_multijugador_vr_script_vrlocaltonetworkmapper",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_guia_multijugador_vr_configuración_multijugador",
+   "target": "docs_guia_multijugador_vr_photon_app_id",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_guia_multijugador_vr_configuración_realidad_extendida",
+   "target": "docs_guia_multijugador_vr_meta_building_blocks",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_guia_multijugador_vr_script_networkmanager",
+   "target": "docs_guia_multijugador_vr_prefab_playervr",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_guia_multijugador_vr_script_networkmanager",
+   "target": "docs_guia_multijugador_vr_spawnpoints",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_guia_multijugador_vr_script_vrlocaltonetworkmapper",
+   "target": "docs_guia_multijugador_vr_meta_building_blocks",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_guia_multijugador_vr_prefab_playervr",
+   "target": "docs_guia_multijugador_vr_photon_view",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_guia_multijugador_vr_photon_pun_2",
+   "target": "docs_guia_multijugador_vr_script_networkmanager",
+   "relation": "references",
+   "confidence": "INFERRED",
+   "confidence_score": 0.85,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_networkmanager_networkmanager",
+   "target": "docs_guia_multijugador_vr_script_networkmanager",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_networkmanager_networkmanager",
+   "target": "docs_guia_multijugador_vr_spawnpoints",
+   "relation": "shares_data_with",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_networkmanager_networkmanager",
+   "target": "docs_guia_multijugador_vr_photon_pun_2",
+   "relation": "references",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_multiplayer_vrlocaltonetworkmapper_vrlocaltonetworkmapper",
+   "target": "docs_guia_multijugador_vr_script_vrlocaltonetworkmapper",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_multiplayer_vrlocaltonetworkmapper_vrlocaltonetworkmapper",
+   "target": "docs_guia_multijugador_vr_meta_building_blocks",
+   "relation": "references",
+   "confidence": "INFERRED",
+   "confidence_score": 0.85,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_multiplayer_vrlocaltonetworkmapper_vrlocaltonetworkmapper",
+   "target": "docs_guia_multijugador_vr_sincronización",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.85,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_multiplayer_vrlocaltonetworkmapper_vrlocaltonetworkmapper",
+   "target": "docs_guia_multijugador_vr_latencia",
+   "relation": "conceptually_related_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.65,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_multiplayer_gun_gun",
+   "target": "docs_guia_multijugador_vr_remote_procedure_call_rpc",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_multiplayer_playerhealth_playerhealth",
+   "target": "docs_guia_multijugador_vr_remote_procedure_call_rpc",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_multiplayer_playerhealth_playerhealth",
+   "target": "docs_guia_multijugador_vr_meta_building_blocks",
+   "relation": "references",
+   "confidence": "INFERRED",
+   "confidence_score": 0.85,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_multiplayer_gun_gun",
+   "target": "docs_guia_multijugador_vr_prefab_playervr",
+   "relation": "conceptually_related_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_multiplayer_playerhealth_playerhealth",
+   "target": "docs_guia_multijugador_vr_prefab_playervr",
+   "relation": "conceptually_related_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_multiplayer_vrlocaltonetworkmapper_vrlocaltonetworkmapper",
+   "target": "docs_guia_multijugador_vr_prefab_playervr",
+   "relation": "conceptually_related_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_gdd_utr_2026_networking_photon_netcode",
+   "target": "docs_guia_multijugador_vr_photon_pun_2",
+   "relation": "semantically_similar_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.85,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_guia_multijugador_vr_cliente_servidor",
+   "target": "docs_guia_multijugador_vr_photon_pun_2",
+   "relation": "conceptually_related_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.75,
+   "source_file": "docs/Guia_Multijugador_VR.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_arena",
+   "target": "docs_dark_gdd_dark_shot",
+   "relation": "implements",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_samplescene",
+   "target": "docs_gdd_utr_2026_laser_project",
+   "relation": "implements",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_arena",
+   "target": "assets_scripts_singleplayer_playerhealthsolo_playerhealthsolo",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_arena",
+   "target": "assets_scripts_singleplayer_gunsingle_gunsingle",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_arena",
+   "target": "assets_scripts_singleplayer_spawnenemy_spawnenemy",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_arena",
+   "target": "assets_scripts_singleplayer_scoresingle_scoresingle",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_arena",
+   "target": "assets_scripts_singleplayer_timerscript_timerscript",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_arena",
+   "target": "assets_scripts_singleplayer_batterystationsingle_batterystationsingle",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_arena",
+   "target": "assets_scripts_singleplayer_jumpscarebloom_jumpscarebloom",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_arena",
+   "target": "assets_scripts_singleplayer_enemynav_enemyfollow",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_arena",
+   "target": "assets_scripts_singleplayer_health_health",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_arena",
+   "target": "assets_darkshot_scripts_bloomanimator_bloomanimator",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_darkshot_editor_darkshotsetup_darkshotsetup",
+   "target": "docs_escenas_escena_arena",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_samplescene",
+   "target": "assets_scripts_networkmanager_networkmanager",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_samplescene",
+   "target": "assets_scripts_leaveroom_leaveroom",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_samplescene",
+   "target": "assets_scripts_changeui_changeui",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_samplescene",
+   "target": "assets_scripts_multiplayer_gun_gun",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_samplescene",
+   "target": "assets_scripts_multiplayer_playerhealth_playerhealth",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_samplescene",
+   "target": "assets_scripts_multiplayer_vrlocaltonetworkmapper_vrlocaltonetworkmapper",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_singleplayer_timerscript_timerscript",
+   "target": "docs_escenas_escena_lobby",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "assets_scripts_leaveroom_leaveroom",
+   "target": "docs_escenas_escena_lobby",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "docs_escenas_escena_samplescene",
+   "target": "docs_guia_multijugador_vr_prefab_playervr",
+   "relation": "references",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/ESCENAS.md",
+   "source_location": null,
+   "weight": 1.0
+  }
+ ],
+ "hyperedges": [
+  {
+   "id": "ciclo_de_vida_del_bloom",
+   "label": "Ciclo de vida del Bloom en Arena",
+   "nodes": [
+    "assets_scripts_singleplayer_spawnenemy_spawnenemy",
+    "assets_scripts_singleplayer_enemynav_enemyfollow",
+    "assets_darkshot_scripts_bloomanimator_bloomanimator",
+    "assets_scripts_singleplayer_health_health",
+    "assets_scripts_singleplayer_playerhealthsolo_playerhealthsolo",
+    "assets_scripts_singleplayer_jumpscarebloom_jumpscarebloom",
+    "assets_darkshot_editor_darkshotsetup_darkshotsetup"
+   ],
+   "relation": "participate_in",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/DARK_GDD.md"
+  },
+  {
+   "id": "sincronizacion_de_red_pun",
+   "label": "Jugador de red con Photon PUN 2 (SampleScene)",
+   "nodes": [
+    "assets_scripts_networkmanager_networkmanager",
+    "assets_scripts_multiplayer_vrlocaltonetworkmapper_vrlocaltonetworkmapper",
+    "assets_scripts_multiplayer_gun_gun",
+    "assets_scripts_multiplayer_playerhealth_playerhealth",
+    "docs_guia_multijugador_vr_prefab_playervr"
+   ],
+   "relation": "participate_in",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "docs/Guia_Multijugador_VR.md"
+  },
+  {
+   "id": "recurso_luz_bateria",
+   "label": "Luz y batería como recurso (disparar o ver)",
+   "nodes": [
+    "assets_scripts_singleplayer_gunsingle_gunsingle",
+    "assets_scripts_multiplayer_gun_gun",
+    "assets_scripts_singleplayer_batterystationsingle_batterystationsingle",
+    "docs_dark_gdd_bateria_5_por_disparo",
+    "docs_gdd_utr_2026_linterna_se_debilita"
+   ],
+   "relation": "form",
+   "confidence": "INFERRED",
+   "confidence_score": 0.85,
+   "source_file": "docs/GDD_UTR_2026.md"
+  }
+ ],
+ "input_tokens": 0,
+ "output_tokens": 0,
+ "coverage": {
+  "docs/DARK_GDD.md": 190,
+  "docs/GDD_UTR_2026.md": 193,
+  "docs/Guia_Multijugador_VR.md": 410,
+  "docs/ESCENAS.md": 36
+ }
+}

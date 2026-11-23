@@ -42,6 +42,16 @@ MonoBehaviour:
   - RPC_Shoot
   - RPC_Reload
   - TakeDamage
+  - RPC_Invencible
+  - RPC_Pedir
+  - RPC_RegistrarImpacto
+  - RPC_RegistrarKill
+  - RPC_SetBateria
+  - RPC_SoltarBaterias
+  - RPC_SumarBateria
+  - RPC_Atacar
+  - RPC_BloomEliminado
+  - RPC_Danar
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
