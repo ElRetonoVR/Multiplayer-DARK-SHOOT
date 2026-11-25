@@ -41,7 +41,7 @@ public class MatchHUD : MonoBehaviour
         // ---- Bateria y reserva
         if (gun != null)
         {
-            string color = gun.BateriaPct <= bateriaBaja ? "#FF5050" : "#FFFFFF";
+            string color = gun.BateriaPct <= bateriaBaja ? "#F80000" : "#FFFFFF";
             Poner(textoBateria, "BATERIA <color=" + color + ">" + gun.BateriaPct + "%</color>   RESERVA " + gun.Reserva + "/" + gun.maxReserva);
         }
         else
@@ -136,7 +136,7 @@ public class MatchHUD : MonoBehaviour
             Player p = lista[i];
             bool soyYo = p.ActorNumber == miActor;
             bool listo = MatchProps.EstaListo(p);
-            if (soyYo) sb.Append("<color=#FFD54A>");
+            if (soyYo) sb.Append("<color=#19C8E0>");
             sb.Append(NombreDe(p));
             if (soyYo) sb.Append(" (tu)");
             if (soyYo) sb.Append("</color>");
@@ -146,13 +146,13 @@ public class MatchHUD : MonoBehaviour
                 sb.Append("<pos=40%><color=").Append(MatchProps.HexEquipo(t)).Append(">").Append(MatchProps.NombreEquipo(t)).Append("</color>");
             }
             sb.Append("<pos=72%>");
-            if (listo) sb.Append("<color=#50FF70>LISTO</color>");
-            else sb.Append("<color=#FF6060>no listo</color>");
+            if (listo) sb.Append("<color=#00F838>LISTO</color>");
+            else sb.Append("<color=#F80000>no listo</color>");
             sb.Append('\n');
         }
 
         sb.Append('\n');
-        sb.Append("<color=#AAAAAA>");
+        sb.Append("<color=#9A9A9A>");
         if (mm.Estado == EstadoPartida.CuentaRegresiva) sb.Append("A: cancelar (desmarcar listo)");
         else if (modo == ModoPartida.Equipos) sb.Append("A: listo   X: Rojo   Y: Azul");
         else sb.Append("A: listo");
@@ -167,7 +167,7 @@ public class MatchHUD : MonoBehaviour
         int miActor = PhotonNetwork.LocalPlayer != null ? PhotonNetwork.LocalPlayer.ActorNumber : -1;
 
         sb.Length = 0;
-        sb.Append("<b>MARCADOR</b>  <color=#AAAAAA>").Append(MatchProps.NombreModo((int)modo)).Append("</color>\n");
+        sb.Append("<color=#D00000><b>MARCADOR</b></color>  <color=#9A9A9A>").Append(MatchProps.NombreModo((int)modo)).Append("</color>\n");
 
         if (modo == ModoPartida.Equipos)
         {
@@ -186,7 +186,7 @@ public class MatchHUD : MonoBehaviour
         }
 
         string tercera = modo == ModoPartida.Cooperativo ? "B" : "K";
-        sb.Append("<color=#AAAAAA>#   JUGADOR<pos=46%>SCORE<pos=62%>").Append(tercera).Append("<pos=74%>D<pos=86%>H</color>\n");
+        sb.Append("<color=#9A9A9A>#   JUGADOR<pos=46%>SCORE<pos=62%>").Append(tercera).Append("<pos=74%>D<pos=86%>H</color>\n");
 
         // En Equipos se agrupa por equipo (Rojo y luego Azul) conservando el orden por score dentro de cada uno
         List<Player> orden = new List<Player>();
@@ -205,7 +205,7 @@ public class MatchHUD : MonoBehaviour
         {
             Player p = orden[i];
             bool soyYo = p.ActorNumber == miActor;
-            if (soyYo) sb.Append("<color=#FFD54A>");
+            if (soyYo) sb.Append("<color=#19C8E0>");
             else if (modo == ModoPartida.Equipos) sb.Append("<color=").Append(MatchProps.HexEquipo(MatchProps.GetEquipo(p))).Append(">");
             sb.Append(i + 1).Append(".  ").Append(NombreDe(p));
             sb.Append("<pos=46%>").Append(MatchProps.GetInt(p, MatchProps.Score));
@@ -215,7 +215,7 @@ public class MatchHUD : MonoBehaviour
             if (soyYo || modo == ModoPartida.Equipos) sb.Append("</color>");
             sb.Append('\n');
         }
-        sb.Append("\n<color=#AAAAAA>Volviendo al lobby en ").Append(Mathf.CeilToInt(mm.SegundosRestantes)).Append("</color>");
+        sb.Append("\n<color=#9A9A9A>Volviendo al lobby en ").Append(Mathf.CeilToInt(mm.SegundosRestantes)).Append("</color>");
         return sb.ToString();
     }
 

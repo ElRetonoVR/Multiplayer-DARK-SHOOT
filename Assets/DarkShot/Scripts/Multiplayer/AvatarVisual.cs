@@ -99,6 +99,16 @@ public class AvatarVisual : MonoBehaviourPun
             {
                 if (ocultosSiEsMio[i] != null) ocultosSiEsMio[i].enabled = false;
             }
+
+            // Colliders del avatar propio apagados: siguen a la cabeza y las manos, y la capsula de locomocion
+            // del joystick (Meta Interaction SDK) chocaba contra ellos y frenaba al jugador. Solo hacen falta
+            // en las copias remotas (ahi es donde le pegan los otros); el arma ya saltaba los propios y las
+            // baterias y los Blooms usan distancia.
+            Collider[] propios = GetComponentsInChildren<Collider>(true);
+            for (int i = 0; i < propios.Length; i++)
+            {
+                if (propios[i] != null && !propios[i].isTrigger) propios[i].enabled = false;
+            }
         }
     }
 

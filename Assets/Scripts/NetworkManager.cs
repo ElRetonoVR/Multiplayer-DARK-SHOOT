@@ -57,9 +57,12 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     void EntrarASalaDePruebas()
     {
+        // Abrir ArenaCoop directo prueba el Cooperativo (sala de pruebas aparte para no mezclarse con la de SampleScene)
+        bool coop = SceneManager.GetActiveScene().name.Contains("Coop");
+        ModoPartida modo = coop ? ModoPartida.Cooperativo : ModoPartida.TodosContraTodos;
         PhotonNetwork.JoinOrCreateRoom(
-            salaDePruebas,
-            new RoomOptions { MaxPlayers = 4, CustomRoomProperties = new ExitGames.Client.Photon.Hashtable { { MatchProps.Modo, (int)ModoPartida.TodosContraTodos } } },
+            coop ? salaDePruebas + "-Coop" : salaDePruebas,
+            new RoomOptions { MaxPlayers = 4, CustomRoomProperties = new ExitGames.Client.Photon.Hashtable { { MatchProps.Modo, (int)modo } } },
             TypedLobby.Default
         );
     }

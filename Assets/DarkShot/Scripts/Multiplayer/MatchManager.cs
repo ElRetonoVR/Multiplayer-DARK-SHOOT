@@ -371,6 +371,7 @@ public class MatchManager : MonoBehaviourPunCallbacks
     void RPC_SoltarBaterias(Vector3 posicion)
     {
         if (!PhotonNetwork.IsMasterClient || Estado != EstadoPartida.Jugando) return;
+        if (MatchProps.ModoActual == ModoPartida.Cooperativo) return; // en Cooperativo los jugadores no sueltan pilas
 
         int cuantas = UnityEngine.Random.Range(1, 4); // 1 a 3
         for (int i = 0; i < cuantas; i++)

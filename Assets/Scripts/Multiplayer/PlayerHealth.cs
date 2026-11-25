@@ -171,6 +171,7 @@ public class PlayerHealth : MonoBehaviourPunCallbacks
     {
         MatchManager mm = MatchManager.Instancia;
         if (mm == null || mm.photonView == null) return;
+        if (MatchProps.ModoActual == ModoPartida.Cooperativo) return; // en Cooperativo no se sueltan pilas al morir
 
         Vector3 pos = PosicionCabeza;
         OVRCameraRig rig = FindFirstObjectByType<OVRCameraRig>();

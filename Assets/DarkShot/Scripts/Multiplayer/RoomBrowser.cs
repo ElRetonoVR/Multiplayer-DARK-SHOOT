@@ -29,7 +29,8 @@ public class RoomBrowser : MonoBehaviourPunCallbacks
     public Button botonVolver;
 
     [Header("Opciones")]
-    public string escenaPartida = "SampleScene";
+    public string escenaPartida = "SampleScene";      // Todos vs todos y Equipos (laboratorio)
+    public string escenaCooperativo = "ArenaCoop";    // Cooperativo: mapa del single player (menu 10)
     public byte maxJugadores = 4; // GDD Laser Project: 2 a 4 jugadores
     public float segundosMensajeError = 4f;
 
@@ -233,7 +234,9 @@ public class RoomBrowser : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient)
         {
             EstablecerEstado("Cargando partida...");
-            PhotonNetwork.LoadLevel(escenaPartida);
+            bool coop = MatchProps.ModoActual == ModoPartida.Cooperativo && !string.IsNullOrEmpty(escenaCooperativo)
+                && Application.CanStreamedLevelBeLoaded(escenaCooperativo);
+            PhotonNetwork.LoadLevel(coop ? escenaCooperativo : escenaPartida);
         }
         else
         {
