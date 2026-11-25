@@ -60,6 +60,7 @@ public class DesktopDebugControls : MonoBehaviour
             if (k.cKey.wasPressedThisFrame) rb.CrearSalaFFA();
             if (k.eKey.wasPressedThisFrame) rb.CrearSalaEquipos();
             if (k.oKey.wasPressedThisFrame) rb.CrearSalaCoop();
+            if (k.vKey.wasPressedThisFrame) rb.AlternarCaminando();
         }
 
         // ---- Sala de espera: listo y equipo (funcionan con o sin visor)

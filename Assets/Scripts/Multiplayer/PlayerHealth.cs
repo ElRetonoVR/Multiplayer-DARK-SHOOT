@@ -202,9 +202,10 @@ public class PlayerHealth : MonoBehaviourPunCallbacks
     {
         if (!photonView.IsMine) return;
 
-        // Elegir el spawn ANTES de moverse (se evita el sitio donde se esta ahora)
+        // Elegir el spawn ANTES de moverse (se evita el sitio donde se esta ahora).
+        // Modo caminando: no se mueve al jugador (reaparece donde esta parado en la sala real).
         NetworkManager nm = NetworkManager.Instancia;
-        if (nm != null)
+        if (nm != null && !MatchProps.ModoCaminando)
         {
             Transform spawn = nm.ObtenerMejorSpawn(PosicionCabeza);
             if (spawn != null) nm.TeletransportarRig(spawn);
@@ -227,14 +228,20 @@ public class PlayerHealth : MonoBehaviourPunCallbacks
     {
         if (!photonView.IsMine) return;
         NetworkManager nm = NetworkManager.Instancia;
-        if (nm == null || MatchProps.ModoActual == ModoPartida.TodosContraTodos)
+        bool caminando = MatchProps.ModoCaminando;
+        if (nm == null || (!caminando && MatchProps.ModoActual == ModoPartida.TodosContraTodos))
         {
             ReaparecerLocal(false);
             return;
         }
 
-        Transform spawn = nm.ObtenerSpawnInicialPartida();
-        if (spawn != null) nm.TeletransportarRig(spawn);
+        // Modo caminando: NO se mueve al jugador. Ya se coloco en su punto de origen al entrar a la escena
+        // (NetworkManager.CrearJugador); moverlo otra vez descuadraria su posicion con la de la sala real.
+        if (!caminando)
+        {
+            Transform spawn = nm.ObtenerSpawnInicialPartida();
+            if (spawn != null) nm.TeletransportarRig(spawn);
+        }
 
         currentHealth = maxHealth;
         curacionAcumulada = 0f;

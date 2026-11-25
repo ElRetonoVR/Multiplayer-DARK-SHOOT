@@ -1452,6 +1452,8 @@ public static class DarkShotMultiplayerSetup
             Button botonCrearEquipos = ClonarBoton(multi.gameObject, panelRt, "CrearEquiposBtn", new Vector2(0f, -25f), new Vector2(58f, 14f), "Equipos", 5.5f);
             Button botonCrearCoop = ClonarBoton(multi.gameObject, panelRt, "CrearCoopBtn", new Vector2(62f, -25f), new Vector2(58f, 14f), "Cooperativo", 5.5f);
             Button botonVolver = ClonarBoton(multi.gameObject, panelRt, "VolverBtn", new Vector2(0f, -42f), new Vector2(52f, 12f), "Volver", 6f);
+            // Modo caminando (sin teletransporte al morir): a la izquierda de Volver, misma fila
+            Button botonCaminando = ClonarBoton(multi.gameObject, panelRt, "CaminandoBtn", new Vector2(-62f, -42f), new Vector2(58f, 12f), "Caminando: NO", 5.5f);
             hecho.Add("RoomPanel: titulo, estado, 6 botones de sala, 3 botones de crear sala por modo y Volver (clonados de MultiBtn)");
 
             // ---- RoomBrowser (objeto raiz, siempre activo)
@@ -1466,6 +1468,7 @@ public static class DarkShotMultiplayerSetup
             rb.botonCrearEquipos = botonCrearEquipos;
             rb.botonCrearCoop = botonCrearCoop;
             rb.botonVolver = botonVolver;
+            rb.botonCaminando = botonCaminando;
             rb.escenaPartida = "SampleScene";
             EditorUtility.SetDirty(rb);
 

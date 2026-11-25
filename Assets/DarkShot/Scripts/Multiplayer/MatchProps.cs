@@ -38,6 +38,7 @@ public static class MatchProps
     public const string Listo = "r";       // jugador (bool)
     public const string Equipo = "t";      // jugador (0, 1, 2)
     public const string Blooms = "b";      // jugador
+    public const string Caminando = "cm";  // sala: 1 = modo caminando (sin teletransporte al morir)
 
     public const int SinEquipo = 0;
     public const int EquipoRojo = 1;
@@ -114,6 +115,13 @@ public static class MatchProps
             if (v < 0 || v > 2) v = 0;
             return (ModoPartida)v;
         }
+    }
+
+    // Modo caminando (propiedad de sala "cm"): cada jugador empieza en su punto de origen y nunca se le
+    // teletransporta al morir, para que su posicion en el juego siga siendo la de su cuerpo en la sala real.
+    public static bool ModoCaminando
+    {
+        get { return GetRoomInt(Caminando, 0) != 0; }
     }
 
     public static string NombreModo(int modo)

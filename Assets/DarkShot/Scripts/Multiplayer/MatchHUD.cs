@@ -130,7 +130,9 @@ public class MatchHUD : MonoBehaviour
         Player[] lista = PhotonNetwork.PlayerList;
 
         sb.Length = 0;
-        sb.Append("<b>").Append(MatchProps.NombreModo((int)modo).ToUpper()).Append("</b>\n");
+        sb.Append("<b>").Append(MatchProps.NombreModo((int)modo).ToUpper()).Append("</b>");
+        if (MatchProps.ModoCaminando) sb.Append("  <color=#FFB000>CAMINANDO</color>");
+        sb.Append("\n");
         for (int i = 0; i < lista.Length; i++)
         {
             Player p = lista[i];

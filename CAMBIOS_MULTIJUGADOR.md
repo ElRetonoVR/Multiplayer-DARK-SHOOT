@@ -142,3 +142,43 @@ Cada paso se hace en los dos lados: visor = A / X / Y; editor = K / Z / X (con e
 - Sin simbolos de check/cruz: se usan los textos "LISTO" / "no listo" (la fuente TMP del proyecto puede no tener esos glifos).
 - Texto de las salas del Lobby con fuente 4.5 y ancho 92: "Sala-1841 - Todos vs todos - 2/4" puede quedar justo; si se corta, bajar el tamano en el menu 7.
 - Los tres botones de modo (y Volver) estan a y = -25 / -42 en un panel de 100 de alto; la lista de 6 salas llega a y = -13. No verificado visualmente.
+
+## Modo caminando y mapa del tamaño del single (25/11/2026)
+- **Opción al crear sala:** botón "Caminando: SI/NO" en el panel de salas (se recuerda en cada visor; en modo escritorio, V). Se guarda en la propiedad de sala `cm` y la lista muestra "(caminando)". El HUD de espera muestra CAMINANDO.
+- **En modo caminando:**
+  - Al entrar a la escena, cada jugador se coloca en su **punto de origen** (`NetworkManager.origenesCaminando`, uno distinto por jugador según su orden en la sala).
+  - Después **no se le vuelve a mover**: ni al empezar el combate ni al reaparecer tras morir. Recupera vida, batería e invencibilidad donde está parado.
+- **Menú 13** (`DarkShotModoCaminando.cs`): encoge el laboratorio de SampleScene ×0.582 (de 40 × 27.3 m a 23.3 × 15.9 m, como Arena). Las paredes se acortan sin cambiar su grosor ni su altura. Después corre el menú 6 y crea `OrigenesCaminando` (4 puntos lo más separados posible, mirando al centro) en SampleScene y ArenaCoop.
+  - La música de fondo que estaba en `LabDressing` pasó al objeto raíz `MusicaFondo`, porque el menú 6 borra `LabDressing`.
+  - El generador de baterías quedó en el centro (0, 0, 0) sin plataforma, porque ya no hay 5 m libres.
+- Orígenes en SampleScene (x, z): (−9.6, 1.1), (9.4, −6.0), (1.4, 5.1), (1.4, −5.0).
+- Orígenes en ArenaCoop (x, z): (−10.6, −4.0), (10.4, 1.1), (−1.6, 6.1), (1.4, −7.0).
+- Se volvieron a correr los menús 7 y 9 (botón nuevo en el Lobby y su estilo).
+- **Probado en el editor:**
+  - Lobby → Caminando: SI → Todos vs todos.
+  - SampleScene carga, el HUD dice CAMINANDO y el rig queda en el Origen_1.
+  - Consola sin errores.
+- **Falta:** probar con dos visores (que nadie se mueva al morir) y en el Cooperativo.
+- **Para pruebas sin Lobby:** `NetworkManager.pruebasCaminando` crea la sala de pruebas en modo caminando.
+
+## 1 m menos de ancho y largo y sin joystick en modo caminando (25/11/2026, 14:30)
+- **Menú 14** ("Quitar 1 m de ancho y largo a los mapas"):
+  - Arena, ArenaCoop y SampleScene pasan de 23.3 × 15.9 a **22.3 × 14.9 m**, alrededor del centro del piso. La altura no cambia.
+  - Paredes y obstáculos delgados conservan su ángulo relativo y su grosor; ramas, estación, spawns y rig solo se mueven.
+  - Se volvió a hornear el NavMesh de Arena. ArenaCoop tiene ahora su propio NavMesh (`Assets/Scenes/ArenaCoop/NavMesh-Plane.asset`); antes compartía el de Arena.
+  - El laboratorio se vistió de nuevo (menú 6) y se rehicieron los orígenes. Se corrió el menú 9.
+  - Cada vez que se corre quita otro metro; hay copias en `Backups/`.
+- Orígenes en SampleScene (x, z): (−8.3, −6.4), (7.1, 3.7), (−4.1, 4.6), (0.9, −4.5).
+- Orígenes en ArenaCoop (x, z): (−10.2, −3.7), (9.9, 1.0), (−1.6, 5.7), (1.3, −6.5).
+- **Modo caminando sin joystick:** al entrar a la escena, `NetworkManager.DesactivarLocomocion()` apaga el objeto `Locomotor` del bloque OVRInteractionComprehensive y todos los componentes `Oculus.Interaction.Locomotion` (deslizarse, girar con el stick, teletransporte).
+  - Probado en el editor: en una sala caminando el `Locomotor` queda inactivo, sin errores en la consola.
+  - El single player no cambia: ahí el joystick sigue activo.
+
+## Interior de 21.1 × 14.75 m y orígenes mirando al frente (25/11/2026, 14:55)
+- **Menú 15:** los orígenes del modo caminando miran todos a +Z, la pared del frente. Antes miraban al centro.
+- **Menú 16:** deja el interior de Arena, ArenaCoop y SampleScene en **21.1 × 14.75 m**, medidos de cara interior a cara interior de las paredes.
+  - Se volvió a hornear el NavMesh de Arena y ArenaCoop, se vistió de nuevo el laboratorio y se rehicieron los orígenes.
+  - Después se corrió el menú 9.
+  - Los pasillos siguen conectados con al menos 1 m de paso.
+- Orígenes del laboratorio (distancia a la pared izquierda / a la del frente): 1: 2.57 / 13.78; 2: 17.32 / 3.72; 3: 6.89 / 2.82; 4: 18.89 / 12.82.
+- Orígenes del Cooperativo (izquierda / frente): 1: 0.87 / 11.07; 2: 19.93 / 6.42; 3: 9.04 / 1.76; 4: 11.76 / 13.86.

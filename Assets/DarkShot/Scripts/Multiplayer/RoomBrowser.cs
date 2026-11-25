@@ -27,6 +27,7 @@ public class RoomBrowser : MonoBehaviourPunCallbacks
     public Button botonCrearEquipos;
     public Button botonCrearCoop;
     public Button botonVolver;
+    public Button botonCaminando;         // alterna "Caminando: SI / NO" para las salas que se creen
 
     [Header("Opciones")]
     public string escenaPartida = "SampleScene";      // Todos vs todos y Equipos (laboratorio)
@@ -36,6 +37,8 @@ public class RoomBrowser : MonoBehaviourPunCallbacks
 
     readonly Dictionary<string, RoomInfo> salas = new Dictionary<string, RoomInfo>();
     readonly List<RoomInfo> ordenadas = new List<RoomInfo>();
+    const string PrefCaminando = "DarkShot_Caminando";
+    bool caminando;                // modo caminando para la proxima sala creada (se recuerda en el visor)
     bool panelAbierto;
     bool ocupado;                  // creando o uniendose a una sala
     float proximoChequeo;
@@ -50,6 +53,9 @@ public class RoomBrowser : MonoBehaviourPunCallbacks
         if (botonCrearEquipos != null) botonCrearEquipos.onClick.AddListener(CrearSalaEquipos);
         if (botonCrearCoop != null) botonCrearCoop.onClick.AddListener(CrearSalaCoop);
         if (botonVolver != null) botonVolver.onClick.AddListener(Volver);
+        if (botonCaminando != null) botonCaminando.onClick.AddListener(AlternarCaminando);
+        caminando = PlayerPrefs.GetInt(PrefCaminando, 0) != 0;
+        ActualizarTextoCaminando();
         if (botonesSala != null)
         {
             for (int i = 0; i < botonesSala.Length; i++)
@@ -124,6 +130,22 @@ public class RoomBrowser : MonoBehaviourPunCallbacks
     public void CrearSalaEquipos() { CrearSala((int)ModoPartida.Equipos); }
     public void CrearSalaCoop() { CrearSala((int)ModoPartida.Cooperativo); }
 
+    // Boton "Caminando": sin teletransporte al morir, cada jugador empieza en su punto de origen
+    public void AlternarCaminando()
+    {
+        caminando = !caminando;
+        PlayerPrefs.SetInt(PrefCaminando, caminando ? 1 : 0);
+        PlayerPrefs.Save();
+        ActualizarTextoCaminando();
+    }
+
+    void ActualizarTextoCaminando()
+    {
+        if (botonCaminando == null) return;
+        TMP_Text t = botonCaminando.GetComponentInChildren<TMP_Text>(true);
+        if (t != null) t.text = caminando ? "Caminando: SI" : "Caminando: NO";
+    }
+
     public void CrearSala(int modo)
     {
         if (modo < 0 || modo > 2) modo = 0;
@@ -142,11 +164,12 @@ public class RoomBrowser : MonoBehaviourPunCallbacks
         // Modo de la sala: propiedad de sala "md", publicada en el lobby para mostrarla en la lista
         Hashtable props = new Hashtable();
         props[MatchProps.Modo] = modo;
+        props[MatchProps.Caminando] = caminando ? 1 : 0;
         opciones.CustomRoomProperties = props;
-        opciones.CustomRoomPropertiesForLobby = new string[] { MatchProps.Modo };
+        opciones.CustomRoomPropertiesForLobby = new string[] { MatchProps.Modo, MatchProps.Caminando };
 
         ocupado = true;
-        EstablecerEstado("Creando " + nombre + " (" + MatchProps.NombreModo(modo) + ")...");
+        EstablecerEstado("Creando " + nombre + " (" + MatchProps.NombreModo(modo) + (caminando ? ", caminando" : "") + ")...");
         if (!PhotonNetwork.CreateRoom(nombre, opciones))
         {
             ocupado = false;
@@ -298,7 +321,14 @@ public class RoomBrowser : MonoBehaviourPunCallbacks
         {
             try { modo = System.Convert.ToInt32(valor); } catch { modo = 0; }
         }
-        return MatchProps.NombreModo(modo);
+        string nombre = MatchProps.NombreModo(modo);
+        if (info.CustomProperties != null && info.CustomProperties.TryGetValue(MatchProps.Caminando, out valor) && valor != null)
+        {
+            int c = 0;
+            try { c = System.Convert.ToInt32(valor); } catch { c = 0; }
+            if (c != 0) nombre += " (caminando)";
+        }
+        return nombre;
     }
 
     void EstablecerEstado(string mensaje)

@@ -12,9 +12,15 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 {
     public Transform[] spawnPoints;
 
+    [Header("Modo caminando")]
+    [Tooltip("Un punto de origen por jugador (max. 4). Al entrar a la partida y al empezar el combate cada jugador se coloca en el suyo; despues no se le vuelve a mover. Si esta vacio se eligen 4 spawns separados.")]
+    public Transform[] origenesCaminando;
+
     [Header("Escenas y pruebas")]
     public string escenaLobby = "Lobby";
     public string salaDePruebas = "RoomVR";
+    [Tooltip("Solo pruebas en el editor (abrir la escena directo, sin Lobby): crear la sala de pruebas en modo caminando")]
+    public bool pruebasCaminando = false;
 
     public static NetworkManager Instancia { get; private set; }
 
@@ -61,8 +67,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         bool coop = SceneManager.GetActiveScene().name.Contains("Coop");
         ModoPartida modo = coop ? ModoPartida.Cooperativo : ModoPartida.TodosContraTodos;
         PhotonNetwork.JoinOrCreateRoom(
-            coop ? salaDePruebas + "-Coop" : salaDePruebas,
-            new RoomOptions { MaxPlayers = 4, CustomRoomProperties = new ExitGames.Client.Photon.Hashtable { { MatchProps.Modo, (int)modo } } },
+            (coop ? salaDePruebas + "-Coop" : salaDePruebas) + (pruebasCaminando ? "-Caminando" : ""),
+            new RoomOptions { MaxPlayers = 4, CustomRoomProperties = new ExitGames.Client.Photon.Hashtable { { MatchProps.Modo, (int)modo }, { MatchProps.Caminando, pruebasCaminando ? 1 : 0 } } },
             TypedLobby.Default
         );
     }
@@ -98,12 +104,43 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         if (jugadorCreado) return;
         jugadorCreado = true;
 
-        Transform sp = ObtenerMejorSpawn(null);
+        Transform sp = MatchProps.ModoCaminando ? ObtenerOrigenCaminando() : ObtenerMejorSpawn(null);
         Vector3 pos = sp != null ? sp.position : Vector3.zero;
         Quaternion rot = sp != null ? sp.rotation : Quaternion.identity;
 
         PhotonNetwork.Instantiate("PlayerVR", pos, rot);
         if (sp != null) TeletransportarRig(sp);
+
+        // Modo caminando: sin joystick (ni deslizarse, ni girar, ni teletransportarse); solo se mueve caminando
+        if (MatchProps.ModoCaminando)
+        {
+            DesactivarLocomocion();
+            Invoke(nameof(DesactivarLocomocion), 1f); // por si el SDK de Meta termina de armar el rig un poco despues
+        }
+    }
+
+    // Apaga la locomocion del SDK de Meta (bloque OVRInteractionComprehensive): el objeto "Locomotor" y todos los
+    // componentes del namespace Oculus.Interaction.Locomotion (interactores de teletransporte, giro y deslizamiento).
+    // Mover al jugador con el stick descuadraria su posicion en el juego con la de su cuerpo en la sala real.
+    public void DesactivarLocomocion()
+    {
+        int apagados = 0;
+        MonoBehaviour[] todos = FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        for (int i = 0; i < todos.Length; i++)
+        {
+            MonoBehaviour mb = todos[i];
+            if (mb == null) continue;
+            string ns = mb.GetType().Namespace;
+            if (ns == null || !ns.StartsWith("Oculus.Interaction.Locomotion")) continue;
+            if (mb.enabled) { mb.enabled = false; apagados++; }
+            if (mb.gameObject.name == "Locomotor" && mb.gameObject.activeSelf) mb.gameObject.SetActive(false);
+        }
+        Transform[] transforms = FindObjectsByType<Transform>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+        for (int i = 0; i < transforms.Length; i++)
+        {
+            if (transforms[i] != null && transforms[i].name == "Locomotor") { transforms[i].gameObject.SetActive(false); apagados++; }
+        }
+        if (apagados > 0) Debug.Log("[NetworkManager] Modo caminando: locomocion con joystick desactivada (" + apagados + " componentes/objetos)");
     }
 
     // Spawns que le tocan a un equipo: Rojo = los de x menor al centro de los spawns, Azul = x mayor.
@@ -148,6 +185,64 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             orden++;
         }
         return candidatos[orden % candidatos.Count];
+    }
+
+    // ------------------------------------------------------------ Modo caminando
+    // Puntos de origen: los asignados en el inspector o, si no hay, 4 spawns lo mas separados posible.
+    // El resultado es el mismo en todos los clientes (misma escena), asi que nadie comparte origen.
+    List<Transform> OrigenesCaminando()
+    {
+        List<Transform> lista = new List<Transform>();
+        if (origenesCaminando != null)
+        {
+            for (int i = 0; i < origenesCaminando.Length; i++) if (origenesCaminando[i] != null) lista.Add(origenesCaminando[i]);
+        }
+        if (lista.Count > 0) return lista;
+
+        List<Transform> todos = new List<Transform>();
+        if (spawnPoints != null) for (int i = 0; i < spawnPoints.Length; i++) if (spawnPoints[i] != null) todos.Add(spawnPoints[i]);
+        if (todos.Count == 0) return lista;
+
+        // Muestreo del mas lejano: empieza por el de menor x y agrega el que este mas lejos de los ya elegidos
+        Transform primero = todos[0];
+        for (int i = 1; i < todos.Count; i++) if (todos[i].position.x < primero.position.x) primero = todos[i];
+        lista.Add(primero);
+        while (lista.Count < 4 && lista.Count < todos.Count)
+        {
+            Transform mejor = null;
+            float mejorD = -1f;
+            for (int i = 0; i < todos.Count; i++)
+            {
+                if (lista.Contains(todos[i])) continue;
+                float minima = float.MaxValue;
+                for (int j = 0; j < lista.Count; j++)
+                {
+                    Vector3 d = todos[i].position - lista[j].position;
+                    d.y = 0f;
+                    minima = Mathf.Min(minima, d.magnitude);
+                }
+                if (minima > mejorD) { mejorD = minima; mejor = todos[i]; }
+            }
+            if (mejor == null) break;
+            lista.Add(mejor);
+        }
+        return lista;
+    }
+
+    // Origen del jugador local: segun su lugar en la sala (por ActorNumber), cada uno en uno distinto.
+    // Se usa una sola vez, al entrar a la escena (todavia no hay equipos elegidos).
+    public Transform ObtenerOrigenCaminando()
+    {
+        List<Transform> origenes = OrigenesCaminando();
+        if (origenes.Count == 0 || PhotonNetwork.LocalPlayer == null) return null;
+
+        int orden = 0;
+        Player[] jugadores = PhotonNetwork.PlayerList;
+        for (int i = 0; i < jugadores.Length; i++)
+        {
+            if (jugadores[i].ActorNumber < PhotonNetwork.LocalPlayer.ActorNumber) orden++;
+        }
+        return origenes[orden % origenes.Count];
     }
 
     // Devuelve el spawn mas lejano de los demas jugadores (y de 'posicionPropia' si se indica,
